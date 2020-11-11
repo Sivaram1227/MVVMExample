@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.LoginActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:weightSum="1"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_path_328"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
+            android:text="(+91) India"
+            android:enabled="false"
+            android:focusable="false"
+            app:backgroundTint="@color/colorWhite"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
+            android:inputType="phone"
+            android:hint="Enter your mobile Number"
+            android:textColorHint="@color/colorWhite"
+            app:backgroundTint="@color/colorWhite"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_bg"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+</layout>

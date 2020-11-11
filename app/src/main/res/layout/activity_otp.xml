@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.OtpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:weightSum="1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_path_328"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OTP VERIFICATION"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <EditText
+                    android:id="@+id/otpNo1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:background="@drawable/edit_text_back_ground"
+                    android:layout_marginStart="8dp"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="8dp" />
+                <EditText
+                    android:id="@+id/otpNo2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:inputType="number"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:background="@drawable/edit_text_back_ground"
+                    android:layout_marginStart="8dp"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="8dp" />
+                <EditText
+                    android:id="@+id/otpNo3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:background="@drawable/edit_text_back_ground"
+                    android:layout_marginStart="8dp"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="8dp" />
+                <EditText
+                    android:id="@+id/otpNo4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:background="@drawable/edit_text_back_ground"
+                    android:layout_marginStart="8dp"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="8dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Didn't receive code?"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txtTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="20dp" />
+
+                
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VERIFY"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bt_bg"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:id="@+id/mobileNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9698565611"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/changeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change?"
+                android:layout_marginStart="6dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</layout>
